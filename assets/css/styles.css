@@ -16,6 +16,7 @@ body{
     width: 50px;
 }
 
-.carousel-item{
-    height: 100vh;
+
+.card img{
+    height: 200px;
 }
