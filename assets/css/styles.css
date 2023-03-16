@@ -15,9 +15,17 @@ body{
     background-color: black;
 }
 
+
+
 /* sobreposicion del navbar sobre el carrousel */
 .navbar{
     z-index: 999;
+    background-color: transparent !important;
+}
+
+.bg-color{
+    background-color: #0dcaf0 !important;
+    color: white !important;
 }
 
 /* tamaño del logo */
