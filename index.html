@@ -13,10 +13,10 @@
     <title>Viajes Chile</title>
 </head>
 <body>
-    <header>
+    <header> <!--Seccion header-->
 
-        <nav class="navbar navbar-expand-lg navbar-dark w-100 position-absolute top-0 start-0">
-            <div class="container-fluid w-75 m-auto">
+        <nav class="navbar navbar-expand-lg navbar-dark w-100 position-absolute top-0 start-0"> <!--Navbar-->
+            <div class="container-fluid nav-width">
               <a class="navbar-brand" href="#">
                 <img class="logo" src="/assets/img/viajes.svg" alt="logo-icon">
                 Viajes Chile
@@ -36,15 +36,15 @@
                     <a class="nav-link" href="#destacados">Destacados</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                   </li>
                   
                 </ul>
               </div>
             </div>
-        </nav>
+        </nav> <!--Fin Navbar-->
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> <!--Carrousel-->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="/assets/img/carousel1.jpg" class="d-block w-100" alt="...">
@@ -64,11 +64,11 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-        </div>
-    </header>
+        </div> <!--Fin Carrousel-->
+    </header> <!--Fin header-->
 
-    <main class="w-75 m-auto mt-5">
-        <section class="text-center text-light" id="about">
+    <main class="main-width mt-5"> <!--Inicio Main-->
+        <section class="text-center text-light d-none d-md-block" id="about"> <!--Seccion about-->
             <h1 class="text-uppercase">¿Quiénes Somos?</h1>
             <div class="container mt-5">
                 <div class="row">
@@ -92,11 +92,11 @@
                   </div>
                 </div>
             </div>
-        </section>
-        <section id="destacados" class="text-center text-light mt-5">
+        </section> <!--Fin Seccion about-->
+        <section id="destacados" class="text-center text-light mt-5"> <!--Seccion destacados-->
             <h1 class="text-uppercase">Destacados</h1>
             <div class="row m-auto mt-5">
-                <div class="col">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="/assets/img/card1.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-info text-start">
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-3 col-sm-12 mt-5 mt-md-0">
                     <div class="card">
                         <img src="/assets/img/card2.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-info text-start">
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-3 col-sm-12 mt-5 mt-md-0">
                     <div class="card">
                         <img src="/assets/img/card3.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-info text-start">
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-3 col-sm-12 mt-5 mt-md-0">
                     <div class="card">
                         <img src="/assets/img/card4.jpg" class="card-img-top" alt="...">
                         <div class="card-body bg-info text-start">
@@ -137,8 +137,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="contacto" class="text-center text-light mt-5">
+        </section> <!--Fin Seccion destacados-->
+        <section id="contacto" class="text-center text-light mt-5 mb-5"> <!--Seccion Contacto-->
             <h1 class="text-uppercase">Contacto</h1>
             <form action="POST" class="text-start mt-5">
                 <div class="mb-3">
@@ -156,8 +156,20 @@
 
                 <button type="submit" class="btn btn-info text-light mb-3">Enviar</button>
             </form>
-        </section>
-    </main>
+        </section> <!--Fin Seccion Contacto-->
+    </main> <!--Fin seccion Main-->
+
+    <footer class="bg-info w-100"> <!--Inicio Footer-->
+        <div class="footer-width p-3 m-auto text-light">
+            <h5 class="text-uppercase">Viajes Chile</h5>
+            <div class="d-flex align-items-center gap-3">
+                <i class="fa-brands fa-github fa-2x"></i>
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+                <i class="fa-brands fa-square-twitter fa-2x"></i>
+                <i class="fa-brands fa-square-facebook fa-2x"></i>
+            </div>
+        </div>
+    </footer> <!--Fin Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

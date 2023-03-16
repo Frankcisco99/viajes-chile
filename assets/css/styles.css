@@ -1,22 +1,53 @@
+
+/* Configuraciones generales */
 *{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* configuraciones al body */
 body{
     background-color: black;
 }
+
+/* sobreposicion del navbar sobre el carrousel */
 .navbar{
     z-index: 999;
 }
 
-
+/* tamaño del logo */
 .logo{
     height: 50px;
     width: 50px;
 }
 
-
+/* tamaño de la imagen en el card */
 .card img{
     height: 200px;
+}
+
+/* width de las secciones de la pagina web */
+.nav-width, .main-width, .footer-width{
+    width: 80%;
+    margin: auto;
+}
+
+/* ajustes al footer */
+.footer-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ajustes del width de las secciones de la pagina web para celular */
+@media (max-width: 576px) {
+    .nav-width, .main-width, .footer-width{
+        width: 95%;
+        margin: auto;
+    }   
 }
